@@ -1,0 +1,6 @@
+{
+  "name": "VELORA - Luxury & Minimalist Online Store",
+  "description": "Премиальный монобрендовый интернет-магазин одежды и аксессуаров VELORA с интерактивным каталогом, оформлением заказов, личным кабинетом и защищённой админ-панелью.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

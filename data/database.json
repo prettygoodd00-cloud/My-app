@@ -1,0 +1,517 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_velora",
+      "username": "velora_admin",
+      "name": "Администратор VELORA",
+      "email": "admin@velora-couture.com",
+      "phone": "+7 (495) 120-80-00",
+      "passwordHash": "1f476baa7b7000ba9d3538a2977e9a2c33aa712a6d029e576fd85b32e239cde95aa97f0fa427b3a04cc305e86055358e1adbbe2450a6ac6a22b2db29ae58b62c",
+      "salt": "89f5f450bdd8a18c661fff8655ca6868",
+      "role": "admin",
+      "address": "Москва, Столешников переулок, 14",
+      "createdAt": "2026-11-02T13:52:14.555Z"
+    },
+    {
+      "id": "usr_sample_customer",
+      "username": "elena_v",
+      "name": "Елена Воронцова",
+      "email": "elena.v@example.com",
+      "phone": "+7 (916) 432-10-98",
+      "passwordHash": "50da49ac150e2a2fe5b3bb932377ceaa7315ca22f4fe0cb03ac8d467780b152ccf819d37f88878a9fd3ab18f75c0d67963c185271351f6efd9e16401450cdff1",
+      "salt": "8697b5b1aae3e3d1b4427e3ce0ea6796",
+      "role": "customer",
+      "address": "Москва, ул. Большая Никитская, д. 24, кв. 18",
+      "createdAt": "2026-10-26T13:52:14.621Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "vel-01",
+      "title": "Кашемировое пальто с поясом Camel",
+      "category": "Верхняя одежда",
+      "price": 480000,
+      "oldPrice": 560000,
+      "description": "Иконическое пальто прямого силуэта из премиального монгольского кашемира. Мягкая ниспадающая линия плеча, глубокие накладные карманы и съемный акцентный пояс подчеркивают благородство кроя. Идеально для демисезонных и вечерних образов.",
+      "composition": "100% натуральный кашемир премиум-грейда (Loro Piana weave), подкладка: 100% натуральный шелк.",
+      "care": "Исключительно сухая специализированная эко-химчистка. Хранить в фирменном чехле на широких плечиках.",
+      "images": [
+        "/images/camel_cashmere_coat.jpg",
+        "/images/camel_coat_detail.jpg"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Песочный Camel",
+          "hex": "#C19A6B"
+        },
+        {
+          "name": "Графитовый оникс",
+          "hex": "#1C1C1E"
+        },
+        {
+          "name": "Сливочный кашемир",
+          "hex": "#F5F2EB"
+        }
+      ],
+      "stock": 7,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "Бестселлер",
+        "Премиум кашемир",
+        "Новая коллекция"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-02",
+      "title": "Шелковое платье-комбинация Midnight Noir",
+      "category": "Платья и костюмы",
+      "price": 195000,
+      "oldPrice": 220000,
+      "description": "Элегантное вечернее платье с открытой спиной, выполненное из плотного шелкового креп-сатина. Струящийся силуэт красиво облегает фигуру, а тонкие бретели регулируют идеальную посадку.",
+      "composition": "100% натуральный шелк Mulberry плотностью 22 момме.",
+      "care": "Деликатная ручная стирка при температуре до 30°C специальными средствами для шелка или сухая чистка.",
+      "images": [
+        "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Глубокий черный",
+          "hex": "#111111"
+        },
+        {
+          "name": "Шампань",
+          "hex": "#F3E5AB"
+        },
+        {
+          "name": "Изумрудный шелк",
+          "hex": "#1B4D3E"
+        }
+      ],
+      "stock": 12,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "Вечерняя линия",
+        "100% шелк"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-03",
+      "title": "Двубортный шерстяной жакет Tailored Minimal",
+      "category": "Платья и костюмы",
+      "price": 290000,
+      "description": "Архитектурный двубортный блейзер свободного кроя. Строгая линия плеча в духе эстетики 90-х годов, роговые пуговицы ручной шлифовки и идеальные лацканы создают статусную основу гардероба.",
+      "composition": "98% тонкорунная шерсть Virgin Wool, 2% эластан для комфортной посадки.",
+      "care": "Сухая чистка.",
+      "images": [
+        "/images/wool_blazer_minimal.jpg"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Меланжевый графит",
+          "hex": "#373A3C"
+        },
+        {
+          "name": "Молочный крем",
+          "hex": "#EDE8DF"
+        }
+      ],
+      "stock": 9,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "Архитектурный крой",
+        "Офис и вечер"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-04",
+      "title": "Свитер оверсайз из беби-кашемира Cloud",
+      "category": "Трикотаж и кашемир",
+      "price": 260000,
+      "oldPrice": 295000,
+      "description": "Невесомый и обволакивающий свитерок крупной фактурной вязки. Выполнен из нежнейшего пуха монгольских козлят беби-кашемир. Высокий мягкий ворот-стойка и свободные удлиненные рукава.",
+      "composition": "100% сертифицированный беби-кашемир первого счеса.",
+      "care": "Ручная стирка в холодной воде с шампунем для кашемира. Сушить горизонтально в расправленном виде.",
+      "images": [
+        "/images/cashmere_sweater_cloud.jpg"
+      ],
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "colors": [
+        {
+          "name": "Алебастровый",
+          "hex": "#FAF9F6"
+        },
+        {
+          "name": "Теплый тауп",
+          "hex": "#9E8D7C"
+        },
+        {
+          "name": "Пепельная роза",
+          "hex": "#D4B8B1"
+        }
+      ],
+      "stock": 15,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "Baby Cashmere",
+        "Уютная роскошь"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-05",
+      "title": "Структурированная сумка-тоут из зернистой кожи Sienna",
+      "category": "Кожаные сумки",
+      "price": 370000,
+      "oldPrice": 430000,
+      "description": "Минималистичная сумка геометрической формы из итальянской телячьей кожи растительного дубления. Латунная фурнитура с матовым золотым напылением, вместительное отделение для ноутбука 13\" и потайной карман на молнии.",
+      "composition": "100% итальянская натуральная кожа Nappa, подкладка из замши Alcantara.",
+      "care": "Обрабатывать специальным воском для кожи, беречь от прямых солнечных лучей и влаги.",
+      "images": [
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&q=85"
+      ],
+      "sizes": [
+        "One Size (36 × 28 × 12 см)"
+      ],
+      "colors": [
+        {
+          "name": "Глубокий шоколад",
+          "hex": "#3B2F2F"
+        },
+        {
+          "name": "Карамель",
+          "hex": "#AF6E4D"
+        },
+        {
+          "name": "Черный обсидиан",
+          "hex": "#111111"
+        }
+      ],
+      "stock": 6,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "Ручная работа",
+        "Итальянская кожа"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-06",
+      "title": "Брюки-палаццо со стрелками Virgin Wool",
+      "category": "Платья и костюмы",
+      "price": 175000,
+      "description": "Широкие струящиеся брюки с высокой посадкой и глубокими защипами на талии. Плотная шерстяная костюмная ткань держит четкую форму стрелок, визуально удлиняя силуэт.",
+      "composition": "100% натуральная шерсть Virgin Wool, карманная подкладка хлопок.",
+      "care": "Сухая чистка.",
+      "images": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=85"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Черный",
+          "hex": "#111111"
+        },
+        {
+          "name": "Песочный меланж",
+          "hex": "#C2B69D"
+        }
+      ],
+      "stock": 11,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "Базовый гардероб"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-07",
+      "title": "Кожаный тренч с патами и ремнем Noir",
+      "category": "Верхняя одежда",
+      "price": 620000,
+      "oldPrice": 700000,
+      "description": "Эксклюзивный тренчкот из сверхмягкой перчаточной кожи ягненка. Вдохновлен архивами европейских модных домов. Классическая кокетка, регулируемые паты на манжетах и пояс с металлической пряжкой.",
+      "composition": "100% натуральная премиальная кожа ягненка (Lambskin), подкладка вискоза.",
+      "care": "Специализированная чистка для изделий из тонкой кожи.",
+      "images": [
+        "/images/leather_trench_noir.jpg"
+      ],
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Глянцевый черный",
+          "hex": "#0A0A0A"
+        },
+        {
+          "name": "Коньячный",
+          "hex": "#6E3A20"
+        }
+      ],
+      "stock": 4,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "Лимитированный тираж",
+        "Коллекционная вещь"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-08",
+      "title": "Шелковый платок ручной подгибки \"Flora Velora\"",
+      "category": "Аксессуары",
+      "price": 95000,
+      "oldPrice": 120000,
+      "description": "Авторский шелковый платок каре 90х90 см с узором, разработанным в парижской студии бренда. Ручная обработка края руликом (hand-rolled edges), нежный мерцающий блеск саржевого плетения.",
+      "composition": "100% шелковый твил.",
+      "care": "Деликатная сухая чистка или ручная бережная стирка в прохладной воде.",
+      "images": [
+        "/images/silk_scarf_flora.jpg"
+      ],
+      "sizes": [
+        "90 × 90 см"
+      ],
+      "colors": [
+        {
+          "name": "Палитра слоновой кости и золота",
+          "hex": "#E6D7B9"
+        },
+        {
+          "name": "Черно-белая графика",
+          "hex": "#2B2B2B"
+        }
+      ],
+      "stock": 20,
+      "isFeatured": false,
+      "isNew": true,
+      "tags": [
+        "Подарочная упаковка",
+        "Шелк"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-09",
+      "title": "Миниатюрная сумка-багет с цепочкой Lumière",
+      "category": "Кожаные сумки",
+      "price": 265000,
+      "description": "Лаконичная вечерняя сумочка на плечо. Украшена съемной массивной цепочкой ювелирного плетения с 24-каратным гальваническим золочением. Закрывается на потайной магнитный замок.",
+      "composition": "100% гладкая кожа Boxcalf, золоченая латунная фурнитура.",
+      "care": "Хранить в сухом месте в хлопковом пыльнике.",
+      "images": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&q=85"
+      ],
+      "sizes": [
+        "One Size (24 × 14 × 6 см)"
+      ],
+      "colors": [
+        {
+          "name": "Обсидиан",
+          "hex": "#111111"
+        },
+        {
+          "name": "Слоновая кость",
+          "hex": "#FFFFF0"
+        }
+      ],
+      "stock": 7,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "Вечерний шик"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    },
+    {
+      "id": "vel-10",
+      "title": "Ювелирный ремень с литой пряжкой из матовой латуни",
+      "category": "Аксессуары",
+      "price": 115000,
+      "description": "Узкий классический ремень из плотной седельной кожи. Пряжка органической скульптурной формы отлита вручную в мастерской бренда.",
+      "composition": "100% итальянская седельная кожа, литая латунь.",
+      "care": "Беречь от влаги.",
+      "images": [
+        "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=85"
+      ],
+      "sizes": [
+        "75 см",
+        "85 см",
+        "95 см"
+      ],
+      "colors": [
+        {
+          "name": "Черный",
+          "hex": "#151515"
+        },
+        {
+          "name": "Коньячный",
+          "hex": "#582F1E"
+        }
+      ],
+      "stock": 18,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "Скульптурная пряжка"
+      ],
+      "createdAt": "2026-11-02T13:52:14.492Z",
+      "updatedAt": "2026-11-02T13:52:14.492Z"
+    }
+  ],
+  "orders": [
+    {
+      "userId": null,
+      "customer": {
+        "name": "Тест Заказчик",
+        "phone": "+79991234567",
+        "city": "Москва",
+        "address": "Тверская 1",
+        "deliveryMethod": "courier",
+        "paymentMethod": "card"
+      },
+      "items": [
+        {
+          "productId": "vel-01",
+          "title": "Кашемировое пальто",
+          "price": 480000,
+          "size": "S",
+          "color": "Camel",
+          "quantity": 1,
+          "image": "/images/camel_cashmere_coat.jpg"
+        }
+      ],
+      "subtotal": 480000,
+      "discount": 0,
+      "shipping": 0,
+      "totalAmount": 480000,
+      "id": "VEL-6149",
+      "status": "pending",
+      "trackingNumber": "RU-VEL-734594",
+      "createdAt": "2026-11-02T13:53:04.569Z",
+      "updatedAt": "2026-11-02T13:53:04.569Z"
+    },
+    {
+      "id": "VEL-9821",
+      "userId": "usr_sample_customer",
+      "customer": {
+        "name": "Елена Воронцова",
+        "email": "elena.v@example.com",
+        "phone": "+7 (916) 432-10-98",
+        "city": "Москва",
+        "address": "ул. Большая Никитская, д. 24, кв. 18",
+        "deliveryMethod": "courier",
+        "paymentMethod": "card",
+        "comment": "Пожалуйста, позвоните за час до визита курьера для примерки."
+      },
+      "items": [
+        {
+          "productId": "vel-01",
+          "title": "Кашемировое пальто с поясом Camel",
+          "price": 480000,
+          "size": "S",
+          "color": "Песочный Camel",
+          "quantity": 1,
+          "image": "/images/camel_cashmere_coat.jpg"
+        },
+        {
+          "productId": "vel-08",
+          "title": "Шелковый платок ручной подгибки \"Flora Velora\"",
+          "price": 95000,
+          "size": "90 × 90 см",
+          "color": "Палитра слоновой кости и золота",
+          "quantity": 1,
+          "image": "/images/silk_scarf_flora.jpg"
+        }
+      ],
+      "subtotal": 575000,
+      "discount": 0,
+      "shipping": 0,
+      "totalAmount": 575000,
+      "status": "processing",
+      "trackingNumber": "RU-VEL-847291",
+      "createdAt": "2026-11-01T01:52:14.621Z",
+      "updatedAt": "2026-11-02T01:52:14.621Z"
+    },
+    {
+      "id": "VEL-7650",
+      "userId": "usr_sample_customer",
+      "customer": {
+        "name": "Елена Воронцова",
+        "email": "elena.v@example.com",
+        "phone": "+7 (916) 432-10-98",
+        "city": "Москва",
+        "address": "Бутик VELORA в ТЦ Галерея Времени",
+        "deliveryMethod": "boutique",
+        "paymentMethod": "card"
+      },
+      "items": [
+        {
+          "productId": "vel-04",
+          "title": "Свитер оверсайз из беби-кашемира Cloud",
+          "price": 260000,
+          "size": "XS/S",
+          "color": "Алебастровый",
+          "quantity": 1,
+          "image": "/images/cashmere_sweater_cloud.jpg"
+        }
+      ],
+      "subtotal": 260000,
+      "discount": 0,
+      "shipping": 0,
+      "totalAmount": 260000,
+      "status": "delivered",
+      "trackingNumber": "RU-VEL-736291",
+      "createdAt": "2026-10-28T13:52:14.621Z",
+      "updatedAt": "2026-10-30T13:52:14.621Z"
+    }
+  ]
+}
