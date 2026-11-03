@@ -59,7 +59,7 @@
           "hex": "#F5F2EB"
         }
       ],
-      "stock": 7,
+      "stock": 6,
       "isFeatured": true,
       "isNew": true,
       "tags": [
@@ -408,6 +408,37 @@
     }
   ],
   "orders": [
+    {
+      "userId": null,
+      "customer": {
+        "name": "Test Customer",
+        "phone": "+77011234567",
+        "city": "Алматы",
+        "address": "пр. Достык, 117",
+        "deliveryMethod": "courier",
+        "paymentMethod": "card"
+      },
+      "items": [
+        {
+          "productId": "vel-01",
+          "title": "Кашемировое пальто с поясом Camel",
+          "price": 480000,
+          "size": "S",
+          "color": "Песочный Camel",
+          "quantity": 1,
+          "image": "/images/camel_cashmere_coat.jpg"
+        }
+      ],
+      "subtotal": 480000,
+      "discount": 0,
+      "shipping": 0,
+      "totalAmount": 480000,
+      "id": "VEL-7797",
+      "status": "pending",
+      "trackingNumber": "RU-VEL-750815",
+      "createdAt": "2026-11-03T10:43:32.283Z",
+      "updatedAt": "2026-11-03T10:43:32.283Z"
+    },
     {
       "userId": null,
       "customer": {

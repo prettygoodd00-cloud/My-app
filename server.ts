@@ -1,28 +1,15 @@
-import express from 'express';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import express from 'express';
 import { createServer as createViteServer } from 'vite';
-import { apiRouter } from './server/routes.js';
+import { app } from './server/app.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function startServer() {
-  const app = express();
   const PORT = Number(process.env.PORT) || 3000;
   const isProd = process.env.NODE_ENV === 'production';
-
-  app.use(express.json({ limit: '10mb' }));
-  app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-  app.use(express.static(path.resolve(__dirname, 'public')));
-
-  // API router
-  app.use('/api', apiRouter);
-
-  // Health check
-  app.get('/api/health', (_req, res) => {
-    res.json({ status: 'ok', store: 'VELORA', timestamp: new Date().toISOString() });
-  });
 
   if (isProd) {
     // Serve static frontend in production

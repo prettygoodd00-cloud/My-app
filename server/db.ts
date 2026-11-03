@@ -76,7 +76,10 @@ interface DatabaseSchema {
   orders: Order[];
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const IS_VERCEL = Boolean(process.env.VERCEL);
+const DATA_DIR = IS_VERCEL
+  ? path.resolve('/tmp', 'velora_data')
+  : path.resolve(process.cwd(), 'data');
 const DB_FILE = path.join(DATA_DIR, 'database.json');
 
 // Password hashing helper
@@ -362,9 +365,14 @@ class Database {
         fs.mkdirSync(DATA_DIR, { recursive: true });
       }
 
+      const bundledDb = path.resolve(process.cwd(), 'data', 'database.json');
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         this.data = JSON.parse(raw);
+      } else if (fs.existsSync(bundledDb)) {
+        const raw = fs.readFileSync(bundledDb, 'utf-8');
+        this.data = JSON.parse(raw);
+        this.save();
       } else {
         this.seedInitialData();
         this.save();
